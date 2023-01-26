@@ -1,7 +1,5 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const connect = async () => {
+export const connect = async () => {
     await mongoose.connect('mongodb://localhost/twitter_Dev');
 }
-
-module.exports = connect;
