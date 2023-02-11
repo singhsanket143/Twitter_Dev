@@ -38,7 +38,7 @@ export const getTweet = async (req, res) => {
         const response = await tweetService.get(req.params.id);
         return res.status(200).json({
             success: true,
-            message: 'Successfully fetched a tweet',
+            message: 'Successfully fetched a tweet from service',
             data: response,
             err: {}
         });
